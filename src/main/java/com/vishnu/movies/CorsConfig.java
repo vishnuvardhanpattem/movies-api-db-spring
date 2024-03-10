@@ -13,7 +13,7 @@ public class CorsConfig {
 	public CorsFilter corsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
-		config.addAllowedOrigin("http://localhost:3000"); // Replace with the actual origin of your React app
+		config.addAllowedOrigin("http://localhost:3000", "https://splendorous-sundae-37c6f1.netlify.app/"); // Replace with the actual origin of your React app
 		config.addAllowedMethod("*");
 		config.addAllowedHeader("*");
 		source.registerCorsConfiguration("/**", config);
